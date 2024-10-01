@@ -50,7 +50,7 @@ colorClass,
   arrow,
 } = stock
 numericalChange=(currentPrice-prevClosingPrice).toFixed(2)
-rateChange = (((prevClosingPrice-currentPrice)/prevClosingPrice)*100).toFixed(2)
+rateChange = (((currentPrice-prevClosingPrice)/prevClosingPrice)*100).toFixed(2)
 
 if(currentPrice>prevClosingPrice){
   colorClass="green"
